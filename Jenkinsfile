@@ -10,7 +10,7 @@ pipeline {
     stage('Stage 2') {
       steps {
         echo 'Phase2'
-        sh 'docker run --rm -d -p 80:8080 andrefernandes86/src-demo-apachestrut:latest'
+        sh 'docker run --rm -d -p 80:8080 andrefernandes86/src-demo-apachestruts:latest'
       }
     }
 
