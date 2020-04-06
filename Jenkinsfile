@@ -10,7 +10,7 @@ pipeline {
     stage('Stage 2') {
       steps {
         echo 'Starting the Container..'
-        sh 'docker run --rm -d -p 80:8080 andrefernandes86/src-demo-apachestruts'
+        sh 'docker run --rm -d -p 80:8080 andrefernandes86/src-demo-apachestruts --name apache-struts'
       }
     }
 
@@ -18,6 +18,14 @@ pipeline {
       steps {
         echo 'Testing..'
         sh 'curl 127.0.0.1:80'
+      }
+    }
+
+    stage('Stage 4') {
+      steps {
+        echo 'Deleting demo..'
+        sleep(unit: 'MINUTES', time: 2)
+        sh 'docker kill apache-struts'
       }
     }
 
