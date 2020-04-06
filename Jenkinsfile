@@ -17,7 +17,8 @@ pipeline {
     stage('Stage 3') {
       steps {
         echo 'Testing..'
-        sh 'curl 127.0.0.1:80'
+        sh 'curl 127.0.0.1:8080'
+        echo 'Demo Ready!'
       }
     }
 
