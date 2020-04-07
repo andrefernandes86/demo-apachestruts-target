@@ -25,7 +25,7 @@ pipeline {
     stage('Stage 4') {
       steps {
         echo 'Deleting demo..'
-        sleep(unit: 'HOURS', time: 6)
+        sleep(unit: 'MINUTES', time: 5)
         sh 'docker kill apache-struts'
       }
     }
