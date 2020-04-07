@@ -17,7 +17,7 @@ pipeline {
     stage('Stage 3') {
       steps {
         echo 'Testing..'
-        sh 'curl 192.168.1.84'
+        sh 'wget 192.168.1.84'
         echo 'Demo Ready!'
       }
     }
