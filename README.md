@@ -16,7 +16,7 @@ docker image build -t demo-apachestruts-target .
 
 ## Phase3 - Starting the Container
 ### Starting the Container
-docker run -d --rm --name demo-apachestruts-target -p 80:80 demo-apachestruts-target
+docker run -d --rm --name demo-apachestruts-target -p 80:8080 demo-apachestruts-target
 
 ### Executing Commands Inside the Attacker Container
 docker exec -it demo-apachestruts-target bash
