@@ -1,1 +1,1 @@
-FROM andrefernandes86/src-demo-apachestruts
+FROM andrefernandes86/demo-apachestruts-target
