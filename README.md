@@ -9,7 +9,7 @@ curl -fsSL https://get.docker.com | sh
 ## Phase2 - Building the Image
 
 ### Cloning GitHub Repo
-git clone https://github.com/andrefernandes86/demo-dvwa.git
+git clone https://github.com/andrefernandes86/demo-apachestruts.git
 
 ### Building the Image
 docker image build -t demo-apachestruts-target .
