@@ -26,8 +26,5 @@ http://demo-apachestruts-target
 
 ## How to Build the Image from DockerHub
 ### References
-docker push andrefernandes86/demo-apachestruts-target
-https://github.com/andrefernandes86/demo-apachestruts
-https://github.com/andrefernandes86/demo-dvwa
-https://raw.githubusercontent.com/andrefernandes86/demo-dvwa/master/commands.txt
+- docker run -d --rm -p 80:80 andrefernandes86/demo-apachestruts-target
 
