@@ -26,5 +26,5 @@ http://demo-apachestruts-target
 
 ## How to Build the Image from DockerHub
 ### References
-- docker run -d --rm -p 80:80 andrefernandes86/demo-apachestruts-target
+- docker run -d --rm --name apachestrutstarget -p 80:8080 andrefernandes86/demo-apachestruts-target
 
